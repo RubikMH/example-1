@@ -1,6 +1,5 @@
-import Space from "@/containers/Space";
-import React from "react";
-import { FaCopyright } from "react-icons/fa";
+import React from 'react'
+import { FaCopyright } from 'react-icons/fa'
 
 const Footer = () => {
   return (
@@ -10,7 +9,7 @@ const Footer = () => {
         <FaCopyright className="block" />
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

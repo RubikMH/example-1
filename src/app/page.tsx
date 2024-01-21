@@ -1,9 +1,9 @@
-import HomeContainer from "@/containers/HomeContaniner";
-import Image from "next/image";
-import landingItem from "../../public/undraw_solution_mindset_re_57bf.svg";
-import Space from "@/containers/Space";
-import Button from "@/components/Button";
-import HomeIcons from "@/components/HomeIcons";
+import React from 'react'
+import Image from 'next/image'
+import landingItem from '../../public/undraw_solution_mindset_re_57bf.svg'
+import Space from '@/containers/Space'
+import Button from '@/components/Button'
+import HomeIcons from '@/components/HomeIcons'
 
 export default function Home() {
   return (
@@ -18,8 +18,8 @@ export default function Home() {
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur,
         </p>
         <p
-          className=" leading-6 pr-5 overflow-hidden whitespace-nowrap border-r border-solid border-black w-0 
-        transition-all animate-typing max-w-lg"
+          className=" leading-6 pr-5 overflow-hidden whitespace-nowrap border-r
+          border-solid border-black w-0 transition-all animate-typing max-w-lg"
         >
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, quasi
         </p>
@@ -40,5 +40,5 @@ export default function Home() {
         />
       </div>
     </div>
-  );
+  )
 }

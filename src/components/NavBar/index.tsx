@@ -1,10 +1,12 @@
 "use client";
 import React from "react";
 
-import { useParams } from "next/navigation";
+import { usePathname } from "next/navigation";
+
+import Link from "next/link";
 
 const NavBar = () => {
-  const params = useParams<{ tag: string }>();
+  const params = usePathname();
 
   // Route -> /shop/[tag]/[item]
   // URL -> /shop/shoes/nike-air-max-97
@@ -14,32 +16,40 @@ const NavBar = () => {
     <nav>
       <ul className="flex font-semibold text-base items-center gap-6">
         <li
-          className={` p-2 rounded-xl cursor-pointer ${
-            params.tag === undefined && "bg-[#86340A] text-[#E8D0B3]"
+          className={` p-2 rounded-xl ${
+            params === "/" && "bg-[#86340A] text-[#E8D0B3]"
           }`}
         >
-          Homepage
+          <Link className="w-full h-full" href={"/"}>
+            Homepage
+          </Link>
         </li>
         <li
-          className={` p-2 rounded-xl cursor-pointer ${
-            params.tag === "About" && "bg-[#86340A] text-[#E8D0B3]"
+          className={` p-2 rounded-xl ${
+            params === "/About" && "bg-[#86340A] text-[#E8D0B3]"
           }`}
         >
-          About
+          <Link className="w-full h-full" href={"/About"}>
+            About
+          </Link>
         </li>
         <li
-          className={` p-2 rounded-xl cursor-pointer ${
-            params.tag === "Contact" && "bg-[#86340A] text-[#E8D0B3]"
+          className={` p-2 rounded-xl ${
+            params === "/Contact" && "bg-[#86340A] text-[#E8D0B3]"
           }`}
         >
-          Contact
+          <Link className="w-full h-full" href={"/Contact"}>
+            Contact
+          </Link>
         </li>
         <li
-          className={` p-2 rounded-xl cursor-pointer ${
-            params.tag === "Blog" && "bg-[#86340A] text-[#E8D0B3]"
+          className={` p-2 rounded-xl ${
+            params === "/Blog" && "bg-[#86340A] text-[#E8D0B3]"
           }`}
         >
-          Blog
+          <Link className="w-full h-full" href={"/Blog"}>
+            Blog
+          </Link>
         </li>
       </ul>
     </nav>
