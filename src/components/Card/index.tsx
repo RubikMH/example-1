@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import Tag from '../Tag'
 
 export interface InfoCard {
   createdAt: string
@@ -38,13 +39,7 @@ const Card = ({ info }: { info: InfoCard }) => {
         </div>
         <div className="px-6 pt-4 pb-2">
           {info.tag.split(' ').map((item, index) => (
-            <span
-              key={index}
-              className="inline-block bg-gray-200 rounded-full px-3 py-1 
-                    font-semibold text-gray-700 mr-2 mb-2 text-sm "
-            >
-              #{item}
-            </span>
+            <Tag key={index} text={item} />
           ))}
         </div>
       </div>
