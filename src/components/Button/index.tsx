@@ -1,21 +1,23 @@
-import React from "react";
+import React from 'react'
 
 interface Props {
-  children: string;
-  primary?: boolean;
+  children: string
+  primary?: boolean
+  type?: string
 }
-const Button = ({ children, primary = false }: Props) => {
+const Button = ({ children, type = 'button', primary = false }: Props) => {
   return (
     <div className="w-full h-10">
       <button
+        type={type === 'button' ? 'button' : 'submit'}
         className={`w-full h-full rounded-md ${
-          primary ? "bg-[#C36839] text-[#E8D0B3]" : "bg-[#E8D0B3]"
+          primary ? 'bg-[#C36839] text-[#E8D0B3]' : 'bg-[#E8D0B3]'
         }`}
       >
         {children}
       </button>
     </div>
-  );
-};
+  )
+}
 
-export default Button;
+export default Button

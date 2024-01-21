@@ -13,23 +13,13 @@ const About = () => {
         </div>
         <div className="w-1/2 p-4">
           <p className="text-justify leading-8">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut dolore
-            similique voluptatem est iure recusandae provident laborum,
-            molestias voluptates quod ipsum suscipit nihil illum illo vero
-            cupiditate earum corrupti eaque. Dolorem provident, culpa unde
-            veniam quam saepe iure debitis animi aut voluptate veritatis facere
-            nam eius harum vero distinctio architecto rerum est quod nihil?
-            Quisquam rem corrupti at numquam placeat assumenda nulla, neque,
-            recusandae sit amet totam voluptas accusantium cumque dolore
-            cupiditate ipsa illo expedita nostrum tenetur iure dolor porro.
-            Soluta est ducimus, ea corporis accusantium id earum asperiores
-            nulla, minus beatae dolore voluptatem, reprehenderit vero laboriosam
-            esse labore doloribus facere! Placeat dignissimos possimus eligendi,
-            repellat et eveniet corporis voluptatum necessitatibus suscipit odit
-            natus, maiores quidem nihil dolor. Natus voluptates provident autem
-            doloremque? Aliquid quibusdam facilis ad ipsa cumque id vel, labore
-            accusamus reiciendis blanditiis illo rerum quam beatae neque? Minus
-            voluptate aut iste libero delectus ipsa quasi maiores tempore!
+            Hi 👋 my name is Mohamad Hasan but people call me MH. I was born in
+            Tehran on The 13th of July 2004. I’ve learned programming since I
+            was 13 years old but I started as Professional web developer in 2020
+            and my brother always pushes me for developing my skills. I’m really
+            keen on programming and coding and trying to find solution for any
+            mistakes. I feel good for all the courses that I have past to
+            develop myself . MH
           </p>
         </div>
       </div>
