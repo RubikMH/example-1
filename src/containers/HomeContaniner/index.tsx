@@ -9,7 +9,9 @@ const HomeContainer = ({ children }: Props) => {
   return (
     <>
       <Header />
-      <main className="w-full h-[80%]  max-w-6xl mx-auto">{children}</main>
+      <main className="w-full h-[80%] overflow-auto  max-w-6xl mx-auto">
+        {children}
+      </main>
       <Footer />
     </>
   )
