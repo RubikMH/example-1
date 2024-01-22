@@ -3,6 +3,7 @@ import photo from '../../../public/my_photo.png'
 import Image from 'next/image'
 
 import PageTransitionEffect from '@/containers/PageTransitionEffect'
+import Space from '@/containers/Space'
 
 const About = () => {
   return (
@@ -12,7 +13,11 @@ const About = () => {
           <Image className="rounded-md" src={photo} alt="my photo" />
         </div>
         <div className="w-1/2 p-4">
-          <p className="text-justify leading-8">
+          <h2 className="text-center text-3xl font-bold">About Me</h2>
+          <Space />
+          <Space />
+          <Space />
+          <p className="text-justify leading-8  text-lg font-medium">
             Hi 👋 my name is Mohamad Hasan but people call me MH. I was born in
             Tehran on The 13th of July 2004. I’ve learned programming since I
             was 13 years old but I started as Professional web developer in 2020
