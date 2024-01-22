@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { type ReactNode } from 'react'
 
 interface Props {
-  children: string
+  children: string | ReactNode
   primary?: boolean
   type?: string
 }

@@ -1,11 +1,14 @@
 import Cards from '@/components/Cards'
+import PageTransitionEffect from '@/containers/PageTransitionEffect'
 import React from 'react'
 
 const Blog = () => {
   return (
-    <div className="w-full h-full">
-      <Cards />
-    </div>
+    <PageTransitionEffect>
+      <div className="w-full h-full">
+        <Cards />
+      </div>
+    </PageTransitionEffect>
   )
 }
 

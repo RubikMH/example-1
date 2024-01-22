@@ -23,7 +23,7 @@ const PageTransitionEffect = ({
         animate="enter"
         variants={variants}
         transition={{ type: 'linear' }}
-        className="overflow-hidden w-full h-full flex 
+        className=" w-full h-full flex 
         justify-center items-center"
       >
         {children}
